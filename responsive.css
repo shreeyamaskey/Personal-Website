@@ -1,0 +1,397 @@
+@media only screen and (max-width: 1380px){
+    footer{
+        padding: 22px 20px;
+    }
+}
+
+@media only screen and (max-width: 1230px){
+    footer{
+        padding: 22px 18px;
+    }
+}
+
+@media only screen and (max-width: 1212px){
+    .footer{
+        margin-top: 0;
+        padding: 0 10px 4px 0px;
+    }
+}
+
+@media only screen and (max-width: 1148px){
+    .project-container{
+        margin-bottom: 5em;
+    } 
+}
+
+@media only screen and (max-width: 1085px){
+    .project-container{
+        margin-bottom: 6.5em;
+        flex-direction: column-reverse;
+    } 
+
+    .project-container img{
+        width: 80%;
+    }
+    
+    .project-container .info-1{
+        padding-right: 0;
+    }
+    
+    .project-container .info-1 h1{
+        padding-top: 2em;
+    }
+}
+
+
+/* Landscape Tablet View  */
+@media only screen and (max-width: 1024px){
+    footer{
+        padding: 22px 15px;
+    }
+
+    .fa-facebook-official,
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-envelope{
+        padding-right: 25px;
+    }
+
+    .contacts{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 875px){
+    footer{
+        padding: 22px 13px;
+    }
+}
+
+/* Tablet View */
+@media only screen and (max-width: 768px){
+    .contacts{
+        width: 290px;
+        padding: 6px;
+        font-size: 15pt;
+    }
+    
+    .fa-facebook-official,
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-envelope{
+        padding-right: 14px;
+    }
+
+    .footer{
+        width: 92%;
+    }
+
+    footer{
+        padding: 22px 11px;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .contacts{
+        width: 290px;
+        padding: 6px;
+        font-size: 15pt;
+    }
+    
+    .fa-facebook-official,
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-envelope{
+        padding-right: 14px;
+    }
+
+    .footer{
+        width: 92%;
+        font-size: 11.5pt;
+    }
+
+    footer{
+        padding: 22px 9px;
+    }
+
+    .project-container img{
+        width: 95%;
+    }
+
+    /* For Nav bar */
+    nav ul:nth-child(2){
+        display: none;
+        width: 4em;
+        background: #7882a4eb;
+        padding: .5em;
+        position: absolute;
+        top: 4em;
+        right: 6.9em;
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+        z-index: 4;
+    }
+
+    nav ul:nth-child(2) li a{
+        padding: .5em;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    nav ul:nth-child(2) li:nth-child(1) a{
+        margin-left: .3em;
+    }
+
+    nav ul:nth-child(2) li:nth-child(2) a{
+        margin-left: -.3em;
+    }
+
+
+    nav .fa-bars{
+        display: block!important;
+        margin-right: 1em;
+        margin-top: .6em;
+        width: 1em;
+        height: auto;
+    }
+
+    nav ul:nth-child(2) li{
+        line-height: 1;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 597px){
+    .contacts{
+        width: 250px;
+    }
+
+    .footer{
+        width: 95%;
+    }
+
+    nav ul:nth-child(2){
+        right: 4em;
+    }
+}
+
+/* For vignette home page */
+@media only screen and (max-width: 550px){
+    #index-body{
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.479);
+    }
+    
+    .container .img-card{
+        max-width: 400px;
+    }
+    
+    .container .img-card:nth-child(8):hover,
+    .container .img-card:nth-child(9):hover {
+        height: 400px;
+    }
+    
+    .container .img-card .img-box{
+        max-width: 100%;
+        height: 245px;
+        left: 0;
+    }
+    
+    .container .img-card:nth-child(5) .img-box{
+        left: 30px;
+        max-width: 81%;
+    }
+
+    .container .img-card:last-child .img-box{
+        width: 61%;
+        left: 20%;
+    }
+
+    .title{
+        font-size: 22pt;
+    }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 480px){
+    .footer{
+        margin-top: -5px;
+        height: 55px;
+    }
+
+    nav ul:nth-child(2){
+        right: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    .container{
+        width: 80%;
+    }
+    
+    .container .img-card{
+        max-width: 320px;
+        height: 215px;
+    }
+
+    .container .img-card:hover{
+        height: 360px;
+    }
+    
+    .container .img-card:nth-child(8):hover,
+    .container .img-card:nth-child(9):hover {
+        height: 400px;
+    }
+    
+    .container .img-card .img-box{
+        max-width: 100%;
+        height: 245px;
+        left: 0;
+    }
+    
+    .container .img-card:nth-child(5) .img-box{
+        left: 30px;
+        max-width: 81%;
+    }
+
+    .container .img-card:last-child .img-box{
+        width: 61%;
+        left: 20%;
+    }
+
+    footer{
+        padding: 22px 6px;
+        height: 67px;
+    }
+
+    .footer{
+        height: 65px;
+        padding-right: 0;
+    }
+
+    .contacts{
+        margin-top: .4em;
+    }
+
+    .project-container .info-1 h1{
+        font-size: 22pt;
+    }
+}
+
+/* For home page */
+@media only screen and (max-width: 428px){
+    .navigation{
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer{
+        width: 100%;
+        height: 40px;
+        border-right: none;
+        padding-top: 6px;
+        margin-bottom: 3em;
+    }
+
+    footer{
+        width: 97.5%;
+        height: max-content;
+        flex-direction: column;
+    }
+    
+    .contacts{
+        width: 80%;
+        margin: auto;
+    }
+
+    .fa-envelope{
+        border-right: 2px solid transparent;
+    }
+
+    .title{
+        font-size: 20pt;
+    }
+
+    .project-container img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 380px){
+
+    nav ul:nth-child(2){
+        right: 2.6em;
+    }
+
+    .project-container .info-1 h1{
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (max-width: 366px){
+
+    .container{
+        width: 80%;
+    }
+
+    .container .img-card{
+        max-width: 270px;
+        height: 210px;
+    }
+
+    .container .img-card:hover{
+        height: 340px;
+    }
+    
+    .container .img-card:nth-child(8):hover,
+    .container .img-card:nth-child(9):hover {
+        height: 400px;
+    }
+    
+    .container .img-card .img-box{
+        max-width: 100%;
+        height: 245px;
+        left: 0;
+    }
+    
+    .container .img-card:nth-child(5) .img-box{
+        left: 30px;
+        max-width: 81%;
+    }
+
+    .container .img-card:last-child .img-box{
+        width: 61%;
+        left: 20%;
+    }
+
+}
+
+/* For vignette remove home page */
+@media only screen and (max-width: 320px){
+    #index-body{
+        box-shadow: none;
+    }
+
+    .container .img-card{
+        max-width: 230px;
+        height: 160px;
+    }
+
+    .container .img-card:hover{
+        height: 320px;
+    }
+
+    .container .img-card:nth-child(8):hover,
+    .container .img-card:nth-child(9):hover {
+    height: 340px;
+    }
+
+    nav ul:nth-child(2){
+        right: 1.5em;
+    }
+
+    .container .img-card:nth-child(5) .img-box{
+        left: 20px;
+    }
+}
