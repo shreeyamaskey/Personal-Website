@@ -410,9 +410,21 @@
     }
 }
 
+@media (height: 955px) {
+    .indicator{
+        top: 42.4%;
+    }
+}
+
 @media (min-height: 1040px) {
     .indicator{
         top: 43.3%;
+    }
+}
+
+@media (min-height: 1041px) {
+    .indicator{
+        top: 43%;
     }
 }
 
@@ -437,6 +449,66 @@
 @media (min-height: 1377px) {
     .indicator{
         top: 44.8%;
+    }
+}
+
+@media (min-height: 1480px) {
+    .indicator{
+        top: 45%;
+    }
+}
+
+@media (min-height: 1530px) {
+    .indicator{
+        top: 45.3%;
+    }
+}
+
+@media (min-height: 1600px) {
+    .indicator{
+        top: 45.5%;
+    }
+}
+
+@media (min-height: 1650px) {
+    .indicator{
+        top: 45.66%;
+    }
+}
+
+@media (min-height: 1700px) {
+    .indicator{
+        top: 45.75%;
+    }
+}
+
+@media (min-height: 1740px) {
+    .indicator{
+        top: 45.85%;
+    }
+}
+
+@media (min-height: 1785px) {
+    .indicator{
+        top: 46%;
+    }
+}
+
+@media (min-height: 1840px) {
+    .indicator{
+        top: 46.1%;
+    }
+}
+
+@media (min-height: 1930px) {
+    .indicator{
+        top: 46.3%;
+    }
+}
+
+@media (min-height: 2000px) {
+    .indicator{
+        top: 46.4%;
     }
 }
 
