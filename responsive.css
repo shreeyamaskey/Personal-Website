@@ -395,3 +395,161 @@
         left: 20px;
     }
 }
+
+/* HEIGHT */
+
+@media (min-height: 883px) {
+    .indicator{
+        top: 42%;
+    }
+}
+
+@media (min-height: 951px) {
+    .indicator{
+        top: 42.7%;
+    }
+}
+
+@media (min-height: 1040px) {
+    .indicator{
+        top: 43.3%;
+    }
+}
+
+@media (min-height: 1130px) {
+    .indicator{
+        top: 43.75%;
+    }
+}
+
+@media (min-height: 1219px) {
+    .indicator{
+        top: 44.2%;
+    }
+}
+
+@media (min-height: 1300px) {
+    .indicator{
+        top: 44.55%;
+    }
+}
+
+@media (min-height: 1377px) {
+    .indicator{
+        top: 44.8%;
+    }
+}
+
+@media (max-height: 778px) {
+    .indicator{
+        top: 40.5%;
+    }
+}
+
+@media (max-height: 741px) {
+    .indicator{
+        top: 40.3%;
+    }
+}
+
+@media (max-height: 725px) {
+    .indicator{
+        top: 40%;
+    }
+}
+
+@media (max-height: 705px) {
+    .indicator{
+        top: 39.5%;
+    }
+}
+
+@media (max-height: 668px) {
+    .indicator{
+        top: 39.1%;
+    }
+}
+
+@media (max-height: 642px) {
+    .indicator{
+        top: 38.4%;
+    }
+}
+
+@media (max-height: 601px) {
+    .indicator{
+        top: 37.8%;
+    }
+}
+
+@media (max-height: 576px) {
+    .indicator{
+        top: 37.2%;
+    }
+}
+
+@media (max-height: 550px) {
+    .indicator{
+        top: 36%;
+    }
+}
+
+@media (max-height: 503px) {
+    .indicator{
+        top: 35.3%;
+    }
+}
+
+@media (max-height: 479px) {
+    .indicator{
+        top: 34.8%;
+    }
+}
+
+@media (max-height: 466px) {
+    .indicator{
+        top: 34%;
+    }
+}
+
+@media (max-height: 444px) {
+    .indicator{
+        top: 33.2%;
+    }
+}
+
+@media (max-height: 424px) {
+    .indicator{
+        top: 32.5%;
+    }
+}
+
+@media (max-height: 406px) {
+    .indicator{
+        top: 31.7%;
+    }
+}
+
+@media (max-height: 385px) {
+    .indicator{
+        top: 31%;
+    }
+}
+
+@media (max-height: 374px) {
+    .indicator{
+        top: 30%;
+    }
+}
+
+@media (max-height: 355px) {
+    .indicator{
+        top: 29%;
+    }
+}
+
+@media (max-height: 335px) {
+    .indicator{
+        top: 28%;
+    }
+}
