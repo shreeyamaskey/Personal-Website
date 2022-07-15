@@ -43,6 +43,7 @@ body{
 .navigation ul{
     display: flex;
     width: 220px;
+    padding-left: 20px;
 }
 
 .navigation ul li{
@@ -93,7 +94,7 @@ body{
 
 .indicator{
     position: absolute;
-    bottom: 50%;
+    top: 41%;
     /* left: 41.9%; */
     width: 60px;
     height: 60px;
