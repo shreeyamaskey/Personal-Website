@@ -540,6 +540,10 @@
     .indicator{
         top: 39.1%;
     }
+    
+    #index-body{
+        background-color: red;
+    }
 }
 
 @media (max-height: 642px) {
