@@ -1,3 +1,17 @@
+@media only screen and (max-width: 1500px){
+    .container .img-card:nth-child(5) .img-box{
+        height: 248px;
+    }
+
+    .container .img-card:nth-child(2) .img-box{
+        height: 250px;
+    }
+
+    .container .img-card:last-child .img-box{
+        height: 275px;
+    }
+}
+
 @media only screen and (max-width: 1380px){
     footer{
         padding: 22px 20px;
@@ -174,6 +188,10 @@
     nav ul:nth-child(2){
         right: 4em;
     }
+
+    .container .img-card:last-child{
+        height: 270px;
+    }
 }
 
 /* For vignette home page */
@@ -197,13 +215,14 @@
 
     .container .img-card .img-box{
         max-width: 100%;
-        height: 240px;
+        height: 230px;
         left: 0;
     }
     
     .container .img-card:nth-child(5) .img-box{
-        left: 30px;
+        left: 40px;
         max-width: 81%;
+        height: 242px;
     }
 
     .container .img-card:last-child .img-box{
@@ -228,8 +247,12 @@
     }
 
     .container .img-card .img-box{
-        height: auto;
+        height: 220px;
         border-radius: 4px;
+    }
+
+    .container .img-card:nth-child(2) .img-box{
+        height: 230px;
     }
 
     .container .img-card:hover{
@@ -248,6 +271,11 @@
     .container .img-card{
         height: 230px;
     }
+
+    .container .img-card:nth-child(5) .img-box{
+        left: 40px;
+        max-width: 81%;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -265,25 +293,33 @@
         height: 340px;
     }
     
-    .container .img-card:nth-child(8):hover,
-    .container .img-card:nth-child(9):hover {
+    .container .img-card:nth-child(8):hover {
         height: 380px;
+    }
+
+    .container .img-card:nth-child(9):hover{
+        height: 430px;
     }
     
     .container .img-card .img-box{
         max-width: 100%;
-        height: auto;
+        height: 195px;
         left: 0;
     }
     
     .container .img-card:nth-child(5) .img-box{
-        left: 30px;
+        left: 35px;
         max-width: 81%;
     }
 
     .container .img-card:last-child .img-box{
-        width: 61%;
-        left: 20%;
+        width: 89%;
+        left: 6%;
+        height: 260px;
+    }
+
+    .container .img-card:last-child{
+        height: 255px;
     }
 
     footer{
@@ -344,7 +380,7 @@
     }
 
     .container .img-card .img-box{
-        height: auto;
+        height: 195px;
         border-radius: 4px;
     }
 }
@@ -360,8 +396,16 @@
     }
 
     .container .img-card .img-box{
-        height: auto;
+        height: 173px;
         border-radius: 4px;
+    }
+
+    .container .img-card:nth-child(5) .img-box{
+        height: 195px;
+    }
+
+    .container .img-card:nth-child(2) .img-box{
+        height: 180px;
     }
 }
 
@@ -387,7 +431,7 @@
     
     .container .img-card .img-box{
         max-width: 100%;
-        height: auto;
+        height: 165px;
         border-radius: 4px;
         left: 0;
     }
@@ -398,9 +442,12 @@
     }
 
     .container .img-card:last-child .img-box{
-        width: 61%;
-        left: 20%;
+        width: 89%;
+        left: 5%;
+        height: 183px;
     }
+
+    
 }
 
 /* For vignette remove home page */
@@ -420,7 +467,7 @@
 
     .container .img-card:nth-child(8):hover,
     .container .img-card:nth-child(9):hover {
-    height: 340px;
+        height: 340px;
     }
 
     nav ul:nth-child(2){
@@ -432,7 +479,11 @@
     }
 
     .container .img-card .img-box{
-        height: auto;
+        height: 140px;
         border-radius: 4px;
+    }
+
+    .container .img-card:nth-child(9):hover{
+        height: 430px;
     }
 }
