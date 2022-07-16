@@ -191,9 +191,13 @@
         height: 400px;
     }
     
+    .container .img-card:hover{
+        height: 360px;
+    }
+
     .container .img-card .img-box{
         max-width: 100%;
-        height: 245px;
+        height: 240px;
         left: 0;
     }
     
@@ -222,6 +226,28 @@
     nav ul:nth-child(2){
         right: 3.5em;
     }
+
+    .container .img-card .img-box{
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .container .img-card:hover{
+        height: 350px;
+    }
+
+    .container .img-card:nth-child(6):hover{
+        height: 320px;
+    }
+
+    .container .img-card:nth-child(6) .img-box{
+        height: 220px;
+        border-radius: 4px;
+    }
+
+    .container .img-card{
+        height: 230px;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -232,21 +258,21 @@
     
     .container .img-card{
         max-width: 320px;
-        height: 215px;
+        height: 205px;
     }
 
     .container .img-card:hover{
-        height: 360px;
+        height: 340px;
     }
     
     .container .img-card:nth-child(8):hover,
     .container .img-card:nth-child(9):hover {
-        height: 400px;
+        height: 380px;
     }
     
     .container .img-card .img-box{
         max-width: 100%;
-        height: 245px;
+        height: auto;
         left: 0;
     }
     
@@ -316,6 +342,11 @@
     .project-container img{
         width: 100%;
     }
+
+    .container .img-card .img-box{
+        height: auto;
+        border-radius: 4px;
+    }
 }
 
 @media only screen and (max-width: 380px){
@@ -326,6 +357,11 @@
 
     .project-container .info-1 h1{
         font-size: 18pt;
+    }
+
+    .container .img-card .img-box{
+        height: auto;
+        border-radius: 4px;
     }
 }
 
@@ -351,7 +387,8 @@
     
     .container .img-card .img-box{
         max-width: 100%;
-        height: 245px;
+        height: auto;
+        border-radius: 4px;
         left: 0;
     }
     
@@ -364,7 +401,6 @@
         width: 61%;
         left: 20%;
     }
-
 }
 
 /* For vignette remove home page */
@@ -394,12 +430,9 @@
     .container .img-card:nth-child(5) .img-box{
         left: 20px;
     }
-}
 
-/* HEIGHT */
-
-@media only screen and (max-height: 668px) {
-    .indicator{
-        top: 48%;
+    .container .img-card .img-box{
+        height: auto;
+        border-radius: 4px;
     }
 }
