@@ -10,7 +10,6 @@
     .container .img-card:last-child .img-box{
         height: 275px;
     }
-
 }
 
 @media only screen and (max-width: 1380px){
@@ -261,7 +260,14 @@
     }
 
     .container .img-card:nth-child(6):hover{
-        height: 320px;
+        height: 390px;
+    }
+
+    .container .img-card:nth-child(2):hover,
+    .container .img-card:nth-child(5):hover,
+    .container .img-card:nth-child(7):hover,
+    .container .img-card:nth-child(8):hover{
+        height: 380px;
     }
 
     .container .img-card:nth-child(6) .img-box{
@@ -271,6 +277,15 @@
 
     .container .img-card{
         height: 230px;
+    }
+
+    .container .img-card:nth-child(2){
+        height: 235px;
+    }
+
+    .container .img-card:nth-child(5),
+    .container .img-card:nth-child(6){
+        height: 240px;
     }
 
     .container .img-card:nth-child(5) .img-box{
@@ -407,6 +422,14 @@
 
     .container .img-card:nth-child(2) .img-box{
         height: 180px;
+    }
+
+    .container .img-card:nth-child(2){
+        height: 190px;
+    }
+
+    .container .img-card:last-child:hover{
+        height: 460px;
     }
 }
 
