@@ -238,6 +238,10 @@ nav .fa-bars{
     transition: 0.3s ease-in-out;
 }
 
+.container .img-card:last-child{
+    height: 265px;    
+}
+
 .container .img-card:hover{
     height: 380px;
 }
