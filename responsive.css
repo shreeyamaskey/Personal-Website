@@ -10,10 +10,7 @@
     .container .img-card:last-child .img-box{
         height: 275px;
     }
-    
-    .container .img-card{
-        background-color: red;
-    }
+
 }
 
 @media only screen and (max-width: 1380px){
