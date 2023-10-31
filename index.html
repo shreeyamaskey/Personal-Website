@@ -10,40 +10,87 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="height-responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ad9fa19830.js" crossorigin="anonymous"></script>
 </head>
-<body id="index-body" class="flex-center">
-    <div class="navigation flex-center">
-        <ul>
-            <li class="list active">
-                <a id="link-1" href="#" class="flex-center">
-                    <span class="icon">
-                        <ion-icon name="home-outline"></ion-icon>
-                    </span>
-                    <span class="text">Home</span>
-                </a>
-            </li>
-            <li class="list">
-                <a id="link-2" href="#" class="flex-center">
-                    <span class="icon">
-                        <ion-icon name="newspaper-outline"></ion-icon>
-                    </span>
-                    <span class="text">Articles</span>
-                </a>
-            </li>
-            <li class="list">
-                <a id="link-3" href="#" class="flex-center">
-                    <span class="icon">
-                        <ion-icon name="browsers-outline"></ion-icon>
-                    </span>
-                    <span class="text">Projects</span>
-                </a>
-            </li>
-            <div class="indicator"></div>
-        </ul>
+<body id="index-body">
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html">Shreeya Maskey</a></h1>
+            </div>
+            <ul>
+                <li class="active-page"><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+            <i class="fas fa-bars" onclick="navOpen();"></i>
+        </nav>
+    </header>
+
+    <div class="body">
+        <div class="about-wrap">
+            <div class="photo">
+                <img src="image/shreeya_headshot.jpg" alt="Picture of Face">
+            </div>
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>
+                    Hi! I am a current student at Westminster University, pursuing a major in Computer Science and a minor in Applied Mathematics. Originally from Kathmandu, Nepal, I bring a diverse perspective to everything I am involved with, and I love collaborating with people across cultures.
+                </p>
+                <p>
+                    I have learned a lot about communicating ideas and developing them into something concrete having had experiences as a Website Developer for an organization in Nepal, and a Web Application Developer for my final IB Computer Science HL project. You can find my code and documentation for these in my GitHub. With my current classes (23/FA)–Algorithms, Databases and Computer Security, I am learning to better a lot of my critical and logical thinking skills.
+                </p>
+                <p>
+                    My ‘Articles’ tab contains most of the articles I have written for Aawaaj News during my internship with them. Through this experience, I got to speak up and be a part of destigmatizing mental health and taboos back home in Nepal. It was very nice to be socially active and I hope to continue being able to gain new experiences and tackle challenges that will expand my skillset.
+                </p>
+                <!-- Add something about writing articles for internship and making website for DAY KTM in the projects tab and can view more coding in my github-->
+            </div>
+        </div>
+        <div class="language">
+            <h2>Languages I have had experience with:</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+
+            </ul>
+        </div>
+
+        <footer id="footer">
+            <h2 class="footer" id="contact">Please do not hesitate to reach out to me! The best way to contact me is through email or LinkedIn. &nbsp; :D</h2>
+    
+            <div class="contacts">
+                <a href="mailto: shreeyamaskey.1@gmail.com" target="_blank"><i class="fa fa-envelope"
+                    aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/shreeyamaskey/" target="_blank"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></a>
+                <a href="https://github.com/shreeyamaskey" target="_blank"><i class="fa fa-github"
+                    aria-hidden="true"></i></a>
+            </div>
+        </footer>
     </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/script.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- x JQuery x -->
+
+    <!-- slick -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- x slick x -->
+
+    <!-- Script for clickEvent -->
+    <script src="script.js"></script>
+    <!-- x Script for clickEvent x -->
 </body>
+
 </html>
