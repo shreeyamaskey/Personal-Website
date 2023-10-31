@@ -11,15 +11,82 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* HOMEPAGE */
 #index-body{
     box-sizing: border-box;
     background-image: none;
-    min-height: 100vh;
+    min-height: 100%;
     background: var(--clr);
     box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.479);
+    position: relative;
+    padding-bottom: 54px;
+}
+
+.body {
+    padding-bottom: 54px;
+    padding-top: 20px;
+    grid-auto-rows: 200px;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0em;
+}
+
+.about-me {
+    height: auto;
+    width: 60%;
+    -webkit-box-shadow: 0px 10px 13px -7px #0f0f0f, 0px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #0f0f0f, 0px 5px 15px 5px rgba(0,0,0,0);
+    padding: 1em;
+    background-image: url(image/white-concrete-wall.jpg);
+    text-align: center;
+}
+
+.about-me p{
+    line-height: 25px;
+    margin: 1.5em 0em;
+}
+
+.photo img {
+    height: auto;
+    width: 100%;
+    border: 3px solid #fff;
+    border-radius: 10em;
+    -webkit-box-shadow: 0px 10px 13px -7px #333333, 0px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #333333, 0px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.photo {
+    width: 20%;
+}
+
+.language {
+    height: auto;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+    background-image: url(image/white-concrete-wall.jpg);
+    -webkit-box-shadow: 0px 10px 13px -7px #0f0f0f, 0px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #0f0f0f, 0px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.language ul{
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 1em;
+    padding-bottom: 1em;
 }
 
 :root{
@@ -32,114 +99,6 @@ body{
     align-items: center;
 }
 
-.navigation{
-    width: 400px;
-    height: 70px;
-    background: url(/image/white-concrete-wall.jpg);
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 10px 13px -7px #00000068, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #00000068, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.navigation ul{
-    display: flex;
-    width: 220px;
-    padding-left: 20px;
-}
-
-.navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 1;
-}
-
-.navigation ul li a{
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-}
-
-.navigation ul li a .icon{
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.5s;
-    color: #7882a4;
-}
-
-.navigation ul li.active a .icon{
-    transform: translateY(-33px);
-}
-
-.navigation ul li a .text{
-    position: absolute;
-    color: #7882a4;
-    font-weight: 400;
-    font-size: .95em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.navigation ul li.active a .text{
-    opacity: 1;
-    transform: translateY(10px);
-}
-
-.indicator{
-    position: absolute;
-    top: 41%;
-    bottom: 0;
-    width: 60px;
-    height: 60px;
-    background: #FBF8F1;
-    border-radius: 50%;
-    border: 6px solid var(--clr);
-    transition: 0.5s;
-}
-
-.indicator::before{
-    content: '';
-    position: absolute;
-    top: 51.9%;
-    left: -21.4px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-right-radius: 22px;
-    box-shadow: 1px -10px 0 0 var(--clr);
-}
-
-.indicator::after{
-    content: '';
-    position: absolute;
-    top: 51.9%;
-    right: -21.4px;
-    width: 20px;
-    height: 20px;
-    background: transparent;
-    border-top-left-radius: 22px;
-    box-shadow: -1px -10px 0 0 var(--clr);
-}
-
-.navigation ul li:nth-child(1).active ~ .indicator{
-    transform: translateX(calc(70px * 0));
-}
-
-.navigation ul li:nth-child(2).active ~ .indicator{
-    transform: translateX(calc(70px * 1));
-}
-
-.navigation ul li:nth-child(3).active ~ .indicator{
-    transform: translateX(calc(70px * 2));
-}
 /* x - HOMEPAGE - x */
 
 
@@ -344,25 +303,38 @@ nav .fa-bars{
     padding-top: 6px;
     margin-top: 5px;
 }
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
+    width: 100%;
+  }
+
 footer{
     padding: 22px;
-    width: 97%;
+    padding-right: 0px;
+    width: 100%;
     height: 54px;
     background-color: #7882a4;
     display: flex;
     justify-content: space-between;
     margin-bottom: -6px;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
 }
 
 .contacts{
     display: flex;
-    width: 400px;
+    width: 30%;
     padding: 6px;
+    padding-right: 0px;
     justify-content: space-evenly;
     font-size: 20pt;
 }
 
-.fa-facebook-official{
+.fa-github{
     color: #fff4f7;
     border-right: 2px solid white;
     padding-right: 45px;
@@ -386,6 +358,7 @@ footer{
 /* PROJECTS */
 .project-body{
     background-image: url(https://tailwindcss.com/_next/static/media/docs-dark@tinypng.a8984b7fb44a4f8232d04de50220ab31.png);
+    min-height: 100%;
 }
 
 .project-container{
