@@ -1,2 +1,2 @@
 # Personal-Website
-This is my new repo for personal website
+This is my repository for my personal website that is connected to the server through github.
