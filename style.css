@@ -364,6 +364,8 @@ footer{
 .project-container{
     padding: 4em 3em;
     margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-container img{
