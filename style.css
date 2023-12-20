@@ -405,4 +405,19 @@ footer{
 .project-container .info-1 p{
     padding-bottom: .9em;
 }
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+hr {
+    border: 0;
+    background-color:#7882a485;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
 /* x - PROJECTS - x */
