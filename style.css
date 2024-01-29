@@ -6,6 +6,17 @@
     font-family: 'Gentium Book Plus', serif;
 }
 
+/* CSS Variables for Colors */
+:root{
+    --home-clr: #D3CEDF;
+    --nav-clr: #ffffffe5;
+    --dark-purple-clr: #7882a4;
+    --border-clr: #7882a4b5;
+    --footer-text-clr: #fff4f7;
+    --white-clr: white;
+}
+
+
 body{
     background-image: url(image/white-concrete-wall.jpg);
     background-size: cover;
@@ -21,7 +32,7 @@ body{
     box-sizing: border-box;
     background-image: none;
     min-height: 100%;
-    background: var(--clr);
+    background: var(--home-clr);
     box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.479);
     position: relative;
     padding-bottom: 54px;
@@ -61,7 +72,7 @@ body{
 .photo img {
     height: auto;
     width: 100%;
-    border: 3px solid #fff;
+    border: 3px solid var(--white-clr);
     border-radius: 10em;
     -webkit-box-shadow: 0px 10px 13px -7px #333333, 0px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #333333, 0px 5px 15px 5px rgba(0,0,0,0);
@@ -89,14 +100,33 @@ body{
     padding-bottom: 1em;
 }
 
-:root{
-    --clr: #D3CEDF;
-}
-
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.photo {
+    grid-area: photo;
+    width: 65%;
+}
+
+.about-me {
+    grid-area: about-me;
+    width: 90%;
+}
+
+.language {
+    grid-area: language;
+}
+
+.body-grid{
+    display: grid;
+    grid-template-areas: 
+        'photo photo about-me about-me about-me about-me'
+        'language language language language language language';
+    row-gap: 40px;
+    padding: 3em 1em 4.5em 3em;
 }
 
 /* x - HOMEPAGE - x */
@@ -111,7 +141,7 @@ nav{
     justify-content: space-around;
     width: 100%;
     height: max-content;
-    border-bottom: 3px solid #7882a4b5;    
+    border-bottom: 3px solid var(--border-clr);    
 }
 
 nav ul{
@@ -126,7 +156,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #ffffffe5;
+    color: var(--nav-clr);
     font-size: 13pt;
 }
 
@@ -139,7 +169,7 @@ nav ul li.active-page a{
 }
 
 nav .logo h1 a{
-    color: #ffffffe5;
+    color: var(--nav-clr);
     font-size: 14pt;
     font-weight: 600;
     text-decoration: none;
@@ -154,7 +184,7 @@ nav .fa-bars{
     font-size: 13pt;
     padding: .5em;
     text-align: center;
-    color: #ffffffe5;
+    color: var(--nav-clr);
 }
 .fa-bars:hover{
     cursor: pointer;
@@ -188,7 +218,7 @@ nav .fa-bars{
 .container .img-card{
     max-width: 450px;
     height: 250px;
-    background: #fff;
+    background: var(--white-clr);
     margin: 30px 20px;
     padding: 20px 15px;
     display: flex;
@@ -267,18 +297,18 @@ nav .fa-bars{
     border-radius: 2.5px;
     cursor: pointer;
     margin: .5em 0;
-    border-bottom: 1px solid #7882a4b5;    
-    border-right: 1px solid #7882a4b5;    
+    border-bottom: 1px solid var(--border-clr);    
+    border-right: 1px solid var(--border-clr);    
 }
 
 .container .img-card .content button a{
     text-decoration: none;
-    color: white;
+    color: var(--white-clr);
     font-weight: 500;
 }
 
 .container .img-card .content button:hover{
-    background-color: #7882a4;
+    background-color: var(--dark-purple-clr);
 }
 
 .container .img-card .content button:hover a{
@@ -294,12 +324,12 @@ nav .fa-bars{
 /* Footer */
 .footer{
     font-weight: 300;
-    color: #fff4f7;
+    color: var(--footer-text-clr);
     font-size: 13.5pt;
     width: 80%;
     height: 40px;
     text-align: center;
-    border-right: 2px solid white;
+    border-right: 2px solid var(--white-clr);
     padding-top: 6px;
     margin-top: 5px;
 }
@@ -316,7 +346,7 @@ footer{
     padding-right: 0px;
     width: 100%;
     height: 54px;
-    background-color: #7882a4;
+    background-color: var(--dark-purple-clr);
     display: flex;
     justify-content: space-between;
     margin-bottom: -6px;
@@ -335,18 +365,18 @@ footer{
 }
 
 .fa-github{
-    color: #fff4f7;
-    border-right: 2px solid white;
+    color: var(--footer-text-clr);
+    border-right: 2px solid var(--white-clr);
     padding-right: 45px;
 }
 .fa-linkedin{
-    color: #fff4f7;
-    border-right: 2px solid white;
+    color: var(--footer-text-clr);
+    border-right: 2px solid var(--white-clr);
     padding-right: 40px;
 }
 .fa-envelope{
-    color: #fff4f7;
-    border-right: 2px solid white;
+    color: var(--footer-text-clr);
+    border-right: 2px solid var(--white-clr);
     padding-right: 45px;
 }
 /* x - Footer - x */
@@ -369,7 +399,7 @@ footer{
 }
 
 .project-container img{
-    border: 5px solid #fff;
+    border: 5px solid var(--white-clr);
     border-radius: 25px;
     width: 60%;
     height: auto;
@@ -381,7 +411,7 @@ footer{
 }
 
 .project-container .info-1 h1{
-    color: #7882a4;
+    color: var(--dark-purple-clr);
     font-size: 25pt;
     padding-bottom: 1.2em;
 }
@@ -401,7 +431,7 @@ footer{
 .project-container .info-1 p:last-child:hover a {
     text-decoration: underline;
     transition: .3s ease-in;
-    color: #7882a4;
+    color: var(--dark-purple-clr);
 }
 
 .project-container .info-1 p{
@@ -423,3 +453,20 @@ hr {
     margin-bottom: 1.5em;
 }
 /* x - PROJECTS - x */
+
+/* RESUME */
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 6em;
+}
+
+.resume iframe{
+    border: 5px solid var(--border-clr);
+    border-radius: 0.5em;
+    width: 800px;
+    height: 900px;
+}
+/* X - RESUME - X */
