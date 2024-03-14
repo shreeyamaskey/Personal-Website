@@ -289,7 +289,8 @@ nav .fa-bars{
     transition-delay: 0.2s;
 }
 
-.container .img-card .content button{
+.container .img-card .content button,
+.about-me button {
     border: none;
     background-color: #7882a4af;
     padding: 4px 10px;
@@ -301,17 +302,20 @@ nav .fa-bars{
     border-right: 1px solid var(--border-clr);    
 }
 
-.container .img-card .content button a{
+.container .img-card .content button a,
+.about-me button a{
     text-decoration: none;
     color: var(--white-clr);
     font-weight: 500;
 }
 
-.container .img-card .content button:hover{
+.container .img-card .content button:hover,
+.about-me button:hover{
     background-color: var(--dark-purple-clr);
 }
 
-.container .img-card .content button:hover a{
+.container .img-card .content button:hover a,
+.about-me button:hover a{
     font-weight: 600;
 }
 
@@ -403,6 +407,7 @@ footer{
     border-radius: 25px;
     width: 60%;
     height: auto;
+    margin-bottom: 2em;
 }
 
 .project-container .info-1{
