@@ -69,6 +69,15 @@ body{
     margin: 1.5em 0em;
 }
 
+.bigger-font {
+    font-size: 17px;
+    margin: 0.5em 0em!important;
+}
+
+.about-me button a{
+    font-size: 16px;
+}
+
 .photo img {
     height: auto;
     width: 100%;
